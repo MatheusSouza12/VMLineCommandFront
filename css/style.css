@@ -1,21 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+
+
 body {
   padding: 0;
   margin: 0;
+  background: #000066;
 }
 
-form {
+div#centro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000066;
+}
+
+div#centro form.form {
+  margin-top: 90px;
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 15px;
-  background-color: #CC3300;
+  width: 100%;
   max-width: 500px;
+  height: 1000px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 }
 
-h1 {
-  margin-bottom: 20px;
-  margin-left: 20px;
-  color: #66FFFF;
-  text-shadow: 5px 5px 5px black;
-}
+
 
 input,
 textarea {
@@ -49,13 +66,6 @@ textarea:focus {
   -moz-border-radius: 5px;
   border: 1px solid;
   color: black;
-}
-
-textarea {
-  width: 400px;
-  height: 120px;
-  line-height: 20px;
-  max-width: 400px;
 }
 
 form label {

@@ -2,43 +2,44 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>--Criação VM--</title>
+    <title>VM Infra</title>
     <meta charset="utf-8" />
     <link href="css/style.css" rel="stylesheet" media="all" />
     <script src="js/JavaScript1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
 
 </head>
 
 <body>
-    <form name="meu_form">
-
-        <h1>Crie agora sua VM</h1>
-
-        <p class="nomevm">
-            <input type="text" id="nomevmid" required="required" name="nomevm" />
-            <label for="nomevm">nomevm</label>
-        </p>
-        <p class="memoria">
-            <input type="text" id="memoriaid" name="memoria" />
-            <label for="memoria">Quantidade Memória</label>
-
-        </p>
-        <p>
-            <input type="cpu" id="cpuid" name="cpu" />
-            <label for="email">Quantidade CPU</label>
-        </p>
-        <p>
-            <input type="ip" id="ipid" name="ip" />
-            <label for="ip">IP da rede</label>
-        </p>
-        <p>
-            <textarea placeholder="Deixe sua opnião"></textarea>
-        </p>
-        <p class="submit">
-            <input type="submit" onclick="Enviar();" value="Enviar" />
-        </p>
-
-    </form>
+    <div id="centro">
+        <form class="form">
+            <div class="form-group">
+                <label for="nomevm">Nome da VM</label>
+                <input type="text" id="nomevmid" required="required" name="nomevm" class="form-control"
+                    placeholder="Nome VM" />
+            </div>
+            <div class="form-group">
+                <label for="ram">Quantidade Memória - MB</label>
+                <input type="text" id="ramid" required="required" name="ram" class="form-control"
+                    placeholder="Ex: 2048" />
+            </div>
+            <div class="form-group">
+                <label for="email">Quantidade CPU</label>
+                <input class="form-control" type="cpu" id="cpuid" required="required" name="cpu"
+                    placeholder="Quantidade de Cores - CPU" />
+            </div>
+            <div class="form-group">
+                <label for="ip">IP da rede</label>
+                <input class="form-control" type="ip" id="ipid" required="required" name="ip"
+                    placeholder="Ip da Rede" />
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
 </body>
 
 </html>
